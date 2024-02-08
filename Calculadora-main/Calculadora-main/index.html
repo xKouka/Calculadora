@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style\style.css">
+</head>
+<body>
+    <table class="matriz">
+        <tr class="fila">
+            <td class="pista"><button class="tecla holick number" id="1">1</button></td>
+            <td class="pista"><button class="tecla holick number" id="2">2</button></td>
+            <td class="pista"><button class="tecla holick number" id="3">3</button></td>
+            <td class="pista"><button class="tecla holick operador" id="+">+</button></td>
+            <td class="pista"><button class="tecla holick operador" id="*">*</button></td>
+            <td class="pista"><button class="tecla holick number" id="^" data-operator="**">^</button></td>
+        </tr>
+        <tr class="fila">
+            <td class="pista"><button class="tecla holick number" id="4">4</button></td>
+            <td class="pista"><button class="tecla holick number" id="5">5</button></td>
+            <td class="pista"><button class="tecla holick number" id="6">6</button></td>
+            <td class="pista"><button class="tecla holick operador" id="-">-</button></td>
+            <td class="pista"><button class="tecla holick operador" id="/">/</button></td>
+            <td class="pista"><button class="tecla holick operador" id=".">.</button></td>
+            
+        </tr>
+        <tr class="fila">
+            <td class="pista"><button class="tecla holick number" id="7">7</button></td>
+            <td class="pista"><button class="tecla holick number" id="8">8</button></td>
+            <td class="pista"><button class="tecla holick number" id="9">9</button></td>
+            <td class="pista"><button class="tecla holick number" id="0">0</button></td>
+            <td class="pista"><button class="tecla funcion" id="igual" onclick="visorCalc()">=</button></td>
+            <td class="pista"><button class="tecla funcion" id="DEL" onclick="visorClear()">DEL</button></td>
+        </tr>
+    </table>
+    <div class="texto" id="visor">
+    </div>
+    <script src="scripts\main.js"></script>
+</body>
+</html>
